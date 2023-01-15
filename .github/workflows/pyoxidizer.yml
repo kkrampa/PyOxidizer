@@ -44,6 +44,7 @@ jobs:
       - name: Spot Test (musl Cross)
         run: |
           ./pyoxidizer build --path myapp --target-triple x86_64-unknown-linux-musl
+          ./myapp/build/x86_64-unknown-linux-musl/debug/install/myapp
 
   pyoxidizer-macos-universal-exe-check:
     needs:
